@@ -1,7 +1,7 @@
 # Regression Project 
 
 ## Introduction:
-For this project, I worked with a [dataset](canada_rent.csv) containing rental prices for units in across Canada in 2024.
+For this project, I worked with a (canada_rent.csv) containing rental prices for units in across Canada in 2024.
 
 
 **My goal is to explore multiple regression models, in order to find a model that predicts the rental price *most* accurately.**
@@ -30,7 +30,7 @@ The datase loaded and
 
 **Rental Price Prediction - Regression Analysis**
 This project aims to predict rental prices using machine learning regression models. 
-The dataset [dataset](canada_rent.csv) containing rental prices for units in across Canada in 2024, and the goal is to identify the best regression model for accurate price prediction.
+The dataset (canada_rent.csv) containing rental prices for units in across Canada in 2024, and the goal is to identify the best regression model for accurate price prediction.
 
 **Project Steps:**
 
@@ -93,8 +93,8 @@ This needs to be Done:
 Tested new predictions on rental listings:
 
 new_input = {
-    "city": "Toronto",
-    "province": "Ontario",
+    "city": "Montreal",
+    "province": "Quebec",
     "lease_term": "12 months",
     "type": "Apartment",
     "furnishing": "Unfurnished",
