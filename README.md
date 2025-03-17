@@ -107,11 +107,47 @@ new_input = {
 
 **Final Model Performance:**
 
-Polynomial Regression----	376.72 O ----693710.42 X----832.89 X
+----------------------------------------
 
-LassoCV Regression----	398.46 X----458371.42 O----677.03 O
+Polynomial Regression: MAE, MSE, RMSE 
 
-Linear Regression----	399.0505 X----458467.01 X----677.10 X
+(376.7237629345819, 693710.424188604, 832.8928047405644) 
+
+(16321769761189.451, 5.617430945635685e+28, 237011201120024.8)
+
+-----------------------------------
+
+LassoCV Regression: MAE, MSE, RMSE 
+
+(398.46497277111985, 458371.42585607636, 677.0313329943278) 
+
+(348.9628885305955, 377222.32835240546, 614.1842788222485)
+
+-----------------------------------
+
+Linear Regression: MAE, MSE, RMSE 
+
+(399.05462396375714, 458467.01963399217, 677.1019270641549) 
+
+(22210211574193.305, 2.1318956311795637e+29, 461724553297695.44)
+
+-----------------------------------
+
+
+Comparing Models Based on Metrics
+
+
+Polynomial Regression----	16321769761189.45 X ----5.61 O----237011201120024.8 X
+
+LassoCV Regression----	348.96 O----458371.42 X----614.18 O
+
+Linear Regression----	22210211574193.3 X----2.13 O----461724553297695.4 X
+
+------------------------------------
+
+LassoCV is the best model out of 3 regression models above. As it has the lower MSE and RMSE in entire error metrics.
+
+-------------------------------------
 
 🏆 Best Model: LassoCV Regression (Best trade-off between MAE, MSE, and RMSE).
 
