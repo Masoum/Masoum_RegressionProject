@@ -1,11 +1,9 @@
-**Rental Price Prediction - Regression Analysis**
+## Rental Price Prediction - Regression Analysis
 
 This project aims to predict rental prices using machine learning regression models. 
 The dataset (canada_rent.csv) containing rental prices for units in across Canada in 2024, and the goal is to identify the best regression model for accurate price prediction.
 
-**Project Steps:**
-
-## Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
 Performed EDA to understand dataset distribution, trends, and relationships.
 Used visualizations heatmap to detect relationship.
@@ -21,7 +19,7 @@ Dropped irrelevant columns such as link, address, availability_date_numeric, ren
 
 Converted categorical features using OneHotEncoding. Scaled numerical features was used by StandardScaler.
 
-#### Feature Engineering
+### Feature Engineering
 
 Created new meaningful features ( clean_sq_feet, clean_beds, clean_baths, pets,...).
 
@@ -29,7 +27,7 @@ Applied Polynomial Features for non-linear relationships.
 
 Used SelectKBest (mutual_info_regression) to choose the most relevant features, just to know what features would be chosen.
 
-##### Model Comparison: Evaluating 3 Regression Models
+### Model Comparison: Evaluating 3 Regression Models
 
 Implemented and compared at least three regression models:
 
@@ -39,13 +37,13 @@ LassoCV Regression
 
 Used Mean Absolute Error (MAE), Mean Squared Error (MSE), and RMSE to compare model performance.
 
-###### Validation Scheme
+### Validation Scheme
 
 Used Train-Test Split (80/20) for quick evaluation.
 Applied K-Fold Cross-Validation (5-fold) to ensure model generalization.
 
 
-####### Feature Selection for the Final Model
+### Feature Selection for the Final Model
 
 Selected all features except 4 (link, address, availability_date_numeric, rentfaster_id)
 
