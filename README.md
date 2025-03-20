@@ -1,4 +1,5 @@
 **Rental Price Prediction - Regression Analysis**
+
 This project aims to predict rental prices using machine learning regression models. 
 The dataset (canada_rent.csv) containing rental prices for units in across Canada in 2024, and the goal is to identify the best regression model for accurate price prediction.
 
@@ -16,7 +17,7 @@ Identified missing values, outliers, and categorical/numerical feature distribut
 ### Data Cleaning & Preparation
 
 Handled missing values using corrolations between target value 'price' and other features.
-Dropped irrelevant columns such as 'Link','Address','availability_date_numeric','rentfaster_id'.
+Dropped irrelevant columns such as link, address, availability_date_numeric, rentfaster_id.
 
 Converted categorical features using OneHotEncoding. Scaled numerical features was used by StandardScaler.
 
@@ -46,7 +47,7 @@ Applied K-Fold Cross-Validation (5-fold) to ensure model generalization.
 
 ####### Feature Selection for the Final Model
 
-Selected all features except 4 ('Link','Address','availability_date_numeric','rentfaster_id')
+Selected all features except 4 (link, address, availability_date_numeric, rentfaster_id)
 
 
 
@@ -57,16 +58,27 @@ Tested new predictions on rental listings:
 
 new_input = {
     "city": "Montreal",
+    
     "province": "Quebec",
+    
     "lease_term": "12 months",
+    
     "type": "Apartment",
+    
     "furnishing": "Unfurnished",
+    
     "smoking": "No",
+    
     "latitude": 51.305962,	
+    
     "longitude": -114.012515,
+    
     "clean_sq_feet": 800,
+    
     "clean_beds": 2,
+    
     "clean_baths": 1.5,
+    
     "pets" : "yes"
 }
 
@@ -88,5 +100,5 @@ Linear Regression is slightly better on MSE/RMSE than LassoCV, but they are very
 
 -------------------------------------
 
-🏆 Best Model: Linear Regression (Best trade-off between MAE, MSE, and RMSE).
+🏆 Best Model: Linear Regression.
 
